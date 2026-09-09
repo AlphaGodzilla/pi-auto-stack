@@ -1,11 +1,11 @@
-# pi-auto
+# auto-stack
 
 pi 扩展(骨架阶段)。**功能待定** —— 当前只提供可被 pi 正常加载的标准扩展目录结构，不注册任何事件、工具或命令，加载零副作用。
 
 ## 目录结构
 
 ```
-pi-auto/
+auto-stack/
 ├── package.json          # pi 字段声明扩展入口: pi.extensions = ["./extensions"]
 ├── README.md
 ├── extensions/
@@ -22,11 +22,11 @@ pi-auto/
 
 ```bash
 # 1. 临时加载(单次会话): 指向包根, pi 会读 package.json 的 pi.extensions
-pi -e ~/.pi/agent/pi-auto
+pi -e ~/.pi/agent/auto-stack
 #    也可直接指向入口目录
-pi -e ~/.pi/agent/pi-auto/extensions
+pi -e ~/.pi/agent/auto-stack/extensions
 
-# 2. 永久加载: 手动把 "pi-auto" 加进 ~/.pi/agent/settings.json 的 packages 数组
+# 2. 永久加载: 手动把 "auto-stack" 加进 ~/.pi/agent/settings.json 的 packages 数组
 #    改完后 pi list 可确认
 
 # 3. 不加入配置, 仅查看已安装扩展
@@ -38,7 +38,7 @@ pi list
 ## 自检
 
 ```bash
-cd ~/.pi/agent/pi-auto
+cd ~/.pi/agent/auto-stack
 node scripts/verify.mjs
 ```
 

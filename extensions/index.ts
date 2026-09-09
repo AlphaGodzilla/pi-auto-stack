@@ -1,5 +1,5 @@
 /**
- * pi-auto 扩展入口(骨架)
+ * auto-stack 扩展入口(骨架)
  *
  * 当前阶段: 只保证扩展能被 pi 正常加载, 尚未实现任何功能。
  * 加载约定: pi 用 jiti 加载本文件, 取 default 导出的工厂函数并调用,
@@ -25,8 +25,8 @@
 
 import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 
-export default function piAuto(pi: ExtensionAPI) {
-	// TODO: 在此实现 pi-auto 的功能。
+export default function autoStack(pi: ExtensionAPI) {
+	// TODO: 在此实现 auto-stack 的功能。
 	// 骨架阶段不注册任何事件/工具/命令, 以保证加载零副作用。
 	void pi;
 }
