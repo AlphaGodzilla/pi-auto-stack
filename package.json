@@ -1,0 +1,23 @@
+{
+  "name": "pi-auto",
+  "version": "0.1.0",
+  "description": "pi 扩展(骨架): 功能待定, 当前仅提供可被 pi 加载的标准扩展目录结构",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi"
+  ],
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verify": "node scripts/verify.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  }
+}
