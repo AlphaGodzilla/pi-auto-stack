@@ -61,6 +61,6 @@ const stub = new Proxy(
 );
 
 await factory(stub);
-console.log("✓ auto-stack 扩展入口加载成功");
+console.log("✓ pi-auto-stack 扩展入口加载成功");
 console.log(`  入口: ${entry}`);
 console.log(`  工厂调用时注册的扩展点: ${calls.length === 0 ? "无(骨架)" : calls.join(", ")}`);

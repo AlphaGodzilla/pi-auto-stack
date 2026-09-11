@@ -1,5 +1,5 @@
 {
-  "name": "auto-stack",
+  "name": "pi-auto-stack",
   "version": "0.1.0",
   "description": "pi 扩展(骨架): 功能待定, 当前仅提供可被 pi 加载的标准扩展目录结构",
   "keywords": [
